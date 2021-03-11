@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+    <h1>Student Details (&quotDynamically&quot)</h1>
+    {% for s in students %}
+        <h4 style="color:red">{{ s.s_id }}</h4>
+        <h4 style="color:red">{{ s.s_name }}</h4>
+        <h4 style="color:red">{{ s.s_branch }}</h4>
+    <hr>
+    {% endfor %}
+</center>
+{% endblock %}

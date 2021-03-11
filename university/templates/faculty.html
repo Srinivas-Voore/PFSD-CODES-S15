@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+    <h1>Faculty Details (&quotDynamically&quot)</h1>
+    {% for f in faculties %}
+        <h4 style="color:red">{{ f.f_id }}</h4>
+        <h4 style="color:red">{{ f.f_name }}</h4>
+    <br>
+    {% endfor %}
+</center>
+{% endblock %}

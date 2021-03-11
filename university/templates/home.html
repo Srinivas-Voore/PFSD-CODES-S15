@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+    <h2>Welcome to KLU</h2>
+    <h2>Welcome to Vijayawada</h2>
+    <h2>Welcome to Hyderabad</h2>
+    {% for c in courses %}
+        <h1>{{c.id}}</h1>
+        <h1>{{c.name}}</h1>
+       <h1>{{ c.date_created.strftime('%Y-%m-%d') }}</h1>
+    {% endfor %}
+</center>
+{% endblock %}

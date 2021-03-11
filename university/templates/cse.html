@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+    <h1>Welcome to CSE Branch</h1>
+    {% for f in faculty %}
+        <h4 style="color:red">{{ f.id }}</h4>
+        <h4 style="color:red">{{ f.name }}</h4>
+    {% endfor %}
+    <br><br>
+    {% for s in students %}
+        <h4 style="color:green">{{ s.id }}</h4>
+        <h4 style="color:green">{{ s.name }}</h4>
+    {% endfor %}
+</center>
+{% endblock %}
